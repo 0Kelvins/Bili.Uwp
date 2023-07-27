@@ -387,6 +387,12 @@ UGC优先级：分P &gt; 播放列表 &gt; 合集视频 &gt; 关联视频 (如�
   <data name="DanmakuBold" xml:space="preserve">
     <value>弹幕加粗</value>
   </data>
+  <data name="DanmakuTopBlock" xml:space="preserve">
+    <value>屏蔽顶部弹幕</value>
+  </data>
+  <data name="DanmakuTBottomBlock" xml:space="preserve">
+    <value>屏蔽底部弹幕</value>
+  </data>
   <data name="DanmakuCount" xml:space="preserve">
     <value>弹幕数</value>
   </data>

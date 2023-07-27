@@ -208,6 +208,8 @@ namespace Bili.Models.Enums
         NoStroke,
         Shadow,
         DanmakuBold,
+        DanmakuTopBlock,
+        DanmakuTBottomBlock,
         PlayLine,
         Quality,
         Viewer,

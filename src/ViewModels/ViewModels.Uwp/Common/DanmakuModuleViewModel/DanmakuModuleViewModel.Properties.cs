@@ -38,6 +38,12 @@ namespace Bili.ViewModels.Uwp.Common
         private bool _isShowDanmaku;
 
         [ObservableProperty]
+        private bool _isShowTopDanmaku;
+
+        [ObservableProperty]
+        private bool _isShowBottomDanmaku;
+
+        [ObservableProperty]
         private bool _canShowDanmaku;
 
         [ObservableProperty]

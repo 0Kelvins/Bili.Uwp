@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:loc="using:Bili.App.Resources.Extension"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    d:DesignHeight="300"
+    d:DesignHeight="444.4"
     d:DesignWidth="400"
     IsFocusEngagementEnabled="True"
     RequiresPointer="WhenEngaged"
@@ -57,6 +57,8 @@
             SelectedItem="{x:Bind ViewModel.DanmakuFont, Mode=TwoWay}" />
         <ToggleSwitch Header="{loc:Locale Name=DanmakuMerge}" IsOn="{x:Bind ViewModel.IsDanmakuMerge, Mode=TwoWay}" />
         <ToggleSwitch Header="{loc:Locale Name=DanmakuBold}" IsOn="{x:Bind ViewModel.IsDanmakuBold, Mode=TwoWay}" />
+        <ToggleSwitch Header="{loc:Locale Name=DanmakuTopBlock}" IsOn="{x:Bind ViewModel.IsShowTopDanmaku, Mode=TwoWay}" />
+        <ToggleSwitch Header="{loc:Locale Name=DanmakuTBottomBlock}" IsOn="{x:Bind ViewModel.IsShowBottomDanmaku, Mode=TwoWay}" />
         <!--<ToggleSwitch Header="{loc:Locale Name=DanmakuAutoLimit}" IsOn="{x:Bind ViewModel.IsDanmakuLimit, Mode=TwoWay}" />-->
         <!--<ToggleSwitch Header="{loc:Locale Name=UseCloudShieldSettings}" IsOn="{x:Bind ViewModel.UseCloudShieldSettings, Mode=TwoWay}" />-->
     </StackPanel>

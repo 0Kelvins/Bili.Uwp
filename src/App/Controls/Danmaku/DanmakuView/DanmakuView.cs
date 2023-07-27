@@ -84,6 +84,8 @@ namespace Bili.App.Controls.Danmaku
                 _danmakuController.SetRollingSpeed(Convert.ToInt32(ViewModel.DanmakuSpeed * 5));
                 _danmakuController.SetIsTextBold(ViewModel.IsDanmakuBold);
                 _danmakuController.SetRenderState(true, false);
+                _danmakuController.SetLayerRenderState(DanmakuDefaultLayerDef.TopLayerId, !ViewModel.IsShowTopDanmaku);
+                _danmakuController.SetLayerRenderState(DanmakuDefaultLayerDef.BottomLayerId, !ViewModel.IsShowBottomDanmaku);
                 _isInitialized = true;
             }
             else
@@ -149,7 +151,9 @@ namespace Bili.App.Controls.Danmaku
             {
                 _danmakuController?.SetAutoControlDensity(ViewModel.IsDanmakuLimit);
             }
-            else if (e.PropertyName == nameof(ViewModel.IsShowDanmaku))
+            else if (e.PropertyName == nameof(ViewModel.IsShowDanmaku)
+                || e.PropertyName == nameof(ViewModel.IsShowTopDanmaku)
+                || e.PropertyName == nameof(ViewModel.IsShowBottomDanmaku))
             {
                 if (!ViewModel.IsShowDanmaku)
                 {

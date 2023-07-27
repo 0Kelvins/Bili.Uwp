@@ -484,6 +484,23 @@
                                     </Button.Flyout>
                                 </Button>
                                 <Button
+                                    x:Name="FullWindowButton"
+                                    AutomationProperties.Name="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ViewModel.FullWindowText}"
+                                    Style="{StaticResource PlayerButtonStyle}"
+                                    Command="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ViewModel.ToggleFullWindowCommand}"
+                                    ToolTipService.ToolTip="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ViewModel.FullWindowText}">
+                                    <Grid>
+                                        <uwp:RegularFluentIcon
+                                            x:Name="EnterFullWindowIcon"
+                                            Symbol="Window16"
+                                            Visibility="Visible" />
+                                        <uwp:RegularFluentIcon
+                                            x:Name="ExitFullWindowIcon"
+                                            Symbol="Window16"
+                                            Visibility="Collapsed" />
+                                    </Grid>
+                                </Button>
+                                <Button
                                     x:Name="FullScreenButton"
                                     AutomationProperties.Name="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ViewModel.FullScreenText}"
                                     Style="{StaticResource PlayerButtonStyle}"
@@ -1337,6 +1354,7 @@
                                             Modifiers="Control" />
                                     </Button.KeyboardAccelerators>
                                 </Button>
+                                
                                 <Button
                                     x:Name="FullScreenButton"
                                     AutomationProperties.Name="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=ViewModel.FullScreenText}"

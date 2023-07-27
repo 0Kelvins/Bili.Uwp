@@ -20,6 +20,8 @@ namespace Bili.Models.Enums
         DefaultMTCControlMode,
         DefaultVideoFormat,
         IsShowDanmaku,
+        IsShowTopDanmaku,
+        IsShowBottomDanmaku,
         DanmakuOpacity,
         DanmakuFontSize,
         DanmakuDensity,

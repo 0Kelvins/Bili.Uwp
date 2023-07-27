@@ -84,6 +84,16 @@ namespace Bili.ViewModels.Interfaces.Common
         bool IsShowDanmaku { get; set; }
 
         /// <summary>
+        /// 是否显示顶部弹幕.
+        /// </summary>
+        bool IsShowTopDanmaku { get; set; }
+
+        /// <summary>
+        /// 是否显示底部弹幕.
+        /// </summary>
+        bool IsShowBottomDanmaku { get; set; }
+
+        /// <summary>
         /// 是否可以显示弹幕.
         /// </summary>
         bool CanShowDanmaku { get; set; }

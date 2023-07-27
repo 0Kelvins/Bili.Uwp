@@ -15,6 +15,8 @@ namespace Bili.ViewModels.Uwp.Common
         private void Initialize()
         {
             IsShowDanmaku = _settingsToolkit.ReadLocalSetting(SettingNames.IsShowDanmaku, true);
+            IsShowTopDanmaku = _settingsToolkit.ReadLocalSetting(SettingNames.IsShowTopDanmaku, true);
+            IsShowBottomDanmaku = _settingsToolkit.ReadLocalSetting(SettingNames.IsShowBottomDanmaku, true);
             DanmakuOpacity = _settingsToolkit.ReadLocalSetting(SettingNames.DanmakuOpacity, 0.8);
             DanmakuFontSize = _settingsToolkit.ReadLocalSetting(SettingNames.DanmakuFontSize, 1.5d);
             DanmakuArea = _settingsToolkit.ReadLocalSetting(SettingNames.DanmakuArea, 1d);
@@ -72,6 +74,12 @@ namespace Bili.ViewModels.Uwp.Common
             {
                 case nameof(IsShowDanmaku):
                     _settingsToolkit.WriteLocalSetting(SettingNames.IsShowDanmaku, IsShowDanmaku);
+                    break;
+                case nameof(IsShowTopDanmaku):
+                    _settingsToolkit.WriteLocalSetting(SettingNames.IsShowTopDanmaku, IsShowTopDanmaku);
+                    break;
+                case nameof(IsShowBottomDanmaku):
+                    _settingsToolkit.WriteLocalSetting(SettingNames.IsShowBottomDanmaku, IsShowBottomDanmaku);
                     break;
                 case nameof(DanmakuOpacity):
                     _settingsToolkit.WriteLocalSetting(SettingNames.DanmakuOpacity, DanmakuOpacity);
